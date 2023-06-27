@@ -6,16 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="onlinegamestore" />
+        <module name="entryverificationsystem" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
       <module name="JtSpringProject" target="11" />
+      <module name="onlinegamestore" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="JtSpringProject" options="-parameters" />
+      <module name="entryverificationsystem" options="-parameters" />
       <module name="onlinegamestore" options="-parameters" />
     </option>
   </component>

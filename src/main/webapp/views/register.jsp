@@ -33,7 +33,7 @@
                 <input type="password" class="form-control form-control-lg" required placeholder="Password*" required name="password"
                        id="password">
             </div>
-            <br><h3 style="color:red;">${message }</h3>
+            <br><h3 style="color:red;" id="error-message">${message }</h3>
 
             <span style="margin-top: 10px">Already have an account <a class="linkControl" href="/">Login here</a></span> <br><br>
             <input type="submit" value="Register" class="btn btn-primary btn-block"><br>

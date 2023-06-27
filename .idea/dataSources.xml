@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="onlinegamestore@localhost" uuid="63030310-5e75-4b7c-8187-45fa8f71fdbe">
+    <data-source source="LOCAL" name="entryverificationsystem@localhost" uuid="63030310-5e75-4b7c-8187-45fa8f71fdbe">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/onlinegamestore</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/entryverificationsystem</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

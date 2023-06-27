@@ -9,11 +9,11 @@
 		<version>2.6.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.onlinegamestore</groupId>
-	<artifactId>onlinegamestore</artifactId>
+	<groupId>com.entryverificationsystem</groupId>
+	<artifactId>entryverificationsystem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>OnlineGameStore</name>
-	<description>Online Game Store</description>
+	<name>EntryVerificationSystem</name>
+	<description>Entry Verification System</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
