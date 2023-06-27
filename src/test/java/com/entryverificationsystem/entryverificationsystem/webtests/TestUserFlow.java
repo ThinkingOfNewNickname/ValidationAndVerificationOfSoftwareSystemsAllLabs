@@ -19,7 +19,10 @@ public class TestUserFlow {
 
     @BeforeAll
     static void setup() {
-        System.setProperty("webdriver.chrome.driver", "src/test/java/com/entryverificationsystem/entryverificationsystem/webtests/resources/chromedriver_win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+                "src/test/java/com/entryverificationsystem" +
+                        "/entryverificationsystem/webtests" +
+                        "/resources/chromedriver_win32/chromedriver.exe");
 
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -37,7 +40,8 @@ public class TestUserFlow {
         passwordField.submit();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement errorMessageElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("error-message")));
+        WebElement errorMessageElement = wait.until(
+                ExpectedConditions.presenceOfElementLocated(By.id("error-message")));
 
         assertTrue(errorMessageElement.getText().contains("Please enter correct username and password"));
     }
@@ -54,7 +58,8 @@ public class TestUserFlow {
         passwordField.submit();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement welcomeMessageElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
+        WebElement welcomeMessageElement = wait.until(
+                ExpectedConditions.presenceOfElementLocated(By.id("username")));
 
         assertTrue(welcomeMessageElement.getText().contains("Welcome"));
     }
@@ -73,7 +78,8 @@ public class TestUserFlow {
         passwordField.submit();
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement errorMessageElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("error-message")));
+        WebElement errorMessageElement = wait.until(
+                ExpectedConditions.presenceOfElementLocated(By.id("error-message")));
 
         assertTrue(errorMessageElement.getText().contains("Username already exists"));
     }

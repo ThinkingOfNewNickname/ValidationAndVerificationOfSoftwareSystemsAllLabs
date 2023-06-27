@@ -45,7 +45,10 @@ public class UserController {
 
 
     @PostMapping(value = "userLoginValidate")
-    public ModelAndView userLoginValidate(@RequestParam("username") String username, @RequestParam("password") String pass, Model model, HttpServletResponse res) {
+    public ModelAndView userLoginValidate(@RequestParam("username") String username,
+                                          @RequestParam("password") String pass,
+                                          Model model,
+                                          HttpServletResponse res) {
         User u = this.userService.validateUser(username, pass);
         if (u.getUsername() != null && u.getUsername().equals(username) && u.getPassword().equals(pass)) {
 

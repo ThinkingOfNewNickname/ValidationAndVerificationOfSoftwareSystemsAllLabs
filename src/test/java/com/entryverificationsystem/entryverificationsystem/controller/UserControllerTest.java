@@ -77,7 +77,8 @@ public class UserControllerTest {
 
         when(userService.validateUser(username, password)).thenReturn(user);
 
-        ModelAndView result = userController.userLoginValidate(username, password, Mockito.mock(Model.class), Mockito.mock(HttpServletResponse.class));
+        ModelAndView result = userController.userLoginValidate(
+                username, password, Mockito.mock(Model.class), Mockito.mock(HttpServletResponse.class));
 
         assertEquals("index", result.getViewName());
         assertEquals(username, result.getModel().get("username"));
@@ -90,7 +91,8 @@ public class UserControllerTest {
 
         when(userService.validateUser(username, password)).thenReturn(new User());
 
-        ModelAndView result = userController.userLoginValidate(username, password, Mockito.mock(Model.class), Mockito.mock(HttpServletResponse.class));
+        ModelAndView result = userController.userLoginValidate(
+                username, password, Mockito.mock(Model.class), Mockito.mock(HttpServletResponse.class));
 
         assertEquals("userLogin", result.getViewName());
         assertEquals("Please enter correct username and password", result.getModel().get("message"));
